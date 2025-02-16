@@ -1,11 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Page Text Processor",
+  "name": "Email Scraper",
   "version": "1.0",
-  "description": "Reads and processes text content from web pages",
+  "description": "Scrapes specific information from email pages",
   "permissions": ["activeTab", "scripting"],
   "action": {
-    "default_popup": "popup.html",
-    "default_icon" : "logo.png"
+    "default_icon": {
+      "gradFlow": "logo.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
   }
 }
